@@ -1,0 +1,576 @@
+/*    Aaron YeYuhang  */
+
+body {  
+    font-family: Arial, sans-serif;  
+}  
+  
+/* Header styles */  
+.site-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+/* Navigation styles */  
+.topnav {  
+    display: flex; /* Using Flexbox Layout */  
+    justify-content: center; /* Horizontal neutron element */
+    overflow: hidden;  
+    background-color: #333;  
+  }  
+  .topnav a {  
+    float: left;  
+    display: block;  
+    color: white;  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+  }  
+  .topnav a:hover {  
+    background-color: lightgrey;  
+    color: white;  
+  }  
+  
+
+/* Additional class for hiding elements */  
+.hidden {  
+    display: none;  
+}   
+
+.hero-banner {  
+    /* Add style to Hero banner */  
+    width: 200px; /* Can be adjusted according to demand */  
+    height: 200px; /* Adjust based on image size and page layout */  
+    background-image: url('2.jpg'); /* If the image loading fails, a background image can be used as an alternative */  
+    background-size: cover; /* Ensure that the image covers the entire container*/  
+    background-position: center; /* Center Image  */  
+    text-align: center; /* If you need to add text above to center it */  
+    position: relative; /* If you need to add an overlay or text on top of it */  
+}  
+
+/* If using<img>tags, this style may be necessary to ensure that the image is displayed correctly */  
+.hero-banner img {  
+    width: 200px; /* Make the image width the same as the container width */  
+    height: auto; /* Maintain the scale of the image */  
+}  
+/* Set styles for containers and list items */  
+
+  footer {  
+    background-color: #000000; /* Light gray background */  
+    text-align: center; /* Center the content (but in this case, we have already set it in. footer content) */  
+    padding: 10px 0; /* Bottom and top margins of footer */  
+    font-family: Arial, sans-serif; /* set font */  
+    color: #ffffff; /* text color */  
+}  
+  
+.footer-content p {  
+    margin: 0;  
+}
+
+/* Container Style */
+#register {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+/* form sheet  */
+#register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input box style */
+#register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* button */
+#register-form button {
+  background-color: #4CAF50; /* green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#register-form button:hover {
+  background-color: #45a049; /* The color darkens when hovering over the mouse */
+}
+
+/* Add prefix to button text */
+#register-form button::before {
+  font-weight: bold;
+}
+
+/* picture style */
+#register img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Login page specific style */
+#log {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; /* Ensure that the footer does not overwrite the content */
+  z-index: 1; /* If the footer uses fixed positioning, it can ensure that the content is displayed above the footer */
+}
+
+#log h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form {
+  margin-bottom: 20px; /* Leave space for images */
+}
+
+#log input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#log button {
+  background-color: #4CAF50; /* green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#log button:hover {
+  background-color: #45a049; /* The color darkens when hovering over the mouse */
+}
+
+/* picture style */
+#log img {
+  display: block;
+  margin: 0 auto; /* horizontally centered */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Overall beautification of shopping cart */
+.Shopping.cart.beautification {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero banner image style */
+.hero-banner img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Title centered */
+.centered-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Container Style */
+.container {
+  margin-top: 20px;
+}
+
+/* Product List Style */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single product style */
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* product number */
+.product h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* product name */
+.product h3 {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Price Style */
+.price {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e74c3c;
+}
+
+/* Quantity input box style */
+.quantity {
+  margin-top: 10px;
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Add and Remove Button Styles */
+.add, .remove {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #2ecc71;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.add:hover {
+  background-color: #27ae60;
+}
+
+.remove {
+  background-color: #e74c3c;
+  color: #fff;
+  display: none; /* Initial Hide */
+}
+
+.remove:hover {
+  background-color: #c0392b;
+}
+
+/* Shopping cart summary style */
+.cart-summary {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cart-summary h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Total price style */
+.cart-summary p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Checkout button style */
+#purchase-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#purchase-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+#purchase-button:hover:enabled {
+  background-color: #27ae60;
+}
+
+/* Clear shopping cart button style */
+#clear-cart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#clear-cart-button:hover {
+  background-color: #c0392b;
+}
+
+.home-header {
+  background-color: #f8b202;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.home-title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.home-main {
+  padding: 2em;
+}
+
+.home-contact-info, .home-courses, .home-training-kits {
+  margin-bottom: 2em;
+}
+
+.home-subtitle {
+  color: #99af4c;
+  margin-top: 0;
+}
+
+.home-info {
+  font-size: 0.9em;
+}
+
+.home-email {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.home-email:hover {
+  text-decoration: underline;
+}
+
+.home-course-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-course-item {
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-course-code {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.home-course-name {
+  margin: 0.5em 0 0.2em;
+}
+
+.home-course-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.home-kit-info {
+  font-size: 0.9em;
+}
+
+.site-header {
+  background: #4CAF50;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.site-main {
+  padding: 2em;
+}
+
+.site-about-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-about-section h2,
+.site-about-section h3 {
+  color: #4CAF50;
+}
+
+.site-values-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-values-list li {
+  background: #f4f4f4;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-left: 5px solid #4CAF50;
+}
+
+.site-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .site-about-section {
+      padding: 0 1em;
+  }
+
+  .site-values-list li {
+      font-size: 0.9em;
+  }
+}
+
+.site-header {
+  background: #4CAF50;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.site-main {
+  padding: 2em;
+}
+
+.site-contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.site-photo-with-description, .site-contact-info {
+  flex: 1 1 calc(50% - 2em);
+}
+
+.site-support-flowchart-title {
+  color: #4CAF50;
+}
+
+.site-forms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.site-form {
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-form h4 {
+  margin-top: 0;
+}
+
+.site-form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.site-form input, .site-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.site-form button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.site-form button:hover {
+  background: #45a049;
+}
+
+.site-success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .site-contact-section {
+      flex-direction: column;
+  }
+
+  .site-photo-with-description, .site-contact-info {
+      flex: 1 1 100%;
+  }
+}

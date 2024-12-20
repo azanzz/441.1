@@ -1,0 +1,176 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>About Us</title>  
+<link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+  
+  <header class="site-header">
+    <img src="1.png" alt="logo" class="logo">  
+    <h1>Australian Virtual Technology Institute</h1>   
+</header> 
+<div class="topnav">  
+  <a href="index.html">Create User</a>  
+  <a href="login.html">Login</a> 
+  <a href="home.html">Home</a>  
+  <a href="About Us.html">About Us</a>
+  <a href="Contact.html">Contact</a>  
+</div> 
+<main class="site-main">
+  <section class="site-contact-section">
+      <div class="site-photo-with-description">
+          <h2 class="site-support-flowchart-title">1. Service Commitment</h2>
+          <p>We promise to provide professional and enthusiastic service to ensure a satisfactory experience for every customer.</p>
+          <p>We solemnly promise to uphold the principles of integrity and efficiency, and provide you with the highest quality service until you are completely satisfied.</p>
+          <img src="2.png" alt="Support Flowchart Image" class="service-flowchart-image">
+      </div>
+      <div class="site-contact-info">
+          <h3>2. Contact Information</h3>
+          <p>Introduce</p>
+          <p>Welcome to Our RTO Website!</p>
+          <p>Phone: <span>+61 2 8888 8888</span></p>
+          <p>Email: <a href="mailto:info@avirtualtech.edu.au">info@avirtualtech.edu.au</a></p>
+
+          <!-- Form Container -->
+          <div class="site-forms-container">
+            <!-- Example Form: Overall Satisfaction -->
+            <form class="site-form" id="overallSatisfactionForm">
+                <h4>Overall Satisfaction Rating (1-5)</h4>
+                <label for="overallRating">Rating:</label>
+                <select id="overallRating" name="overallRating" required>
+                    <option value="">Select...</option>
+                    <option value="1">1 - Very Dissatisfied</option>
+                    <option value="2">2 - Dissatisfied</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="4">4 - Satisfied</option>
+                    <option value="5">5 - Very Satisfied</option>
+                </select>
+                <label for="overallComments">Comments:</label>
+                <textarea id="overallComments" name="overallComments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Product Quality Form -->
+            <form class="site-form" id="productQualityForm">
+                <h4>Product Quality Rating (1-5)</h4>
+                <label for="productQualityRating">Rating:</label>
+                <select id="productQualityRating" name="productQualityRating" required>
+                    <option value="">Select...</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Below Average</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <label for="productQualityComments">Comments:</label>
+                <textarea id="productQualityComments" name="productQualityComments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Customer Service Form -->
+            <form class="site-form" id="customerServiceForm">
+                <h4>Customer Service Rating (1-5)</h4>
+                <label for="customerServiceRating">Rating:</label>
+                <select id="customerServiceRating" name="customerServiceRating" required>
+                    <option value="">Select...</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Below Average</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <label for="customerServiceComments">Comments:</label>
+                <textarea id="customerServiceComments" name="customerServiceComments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Website Experience Form -->
+            <form class="site-form" id="websiteExperienceForm">
+                <h4>Website Experience Rating (1-5)</h4>
+                <label for="websiteExperienceRating">Rating:</label>
+                <select id="websiteExperienceRating" name="websiteExperienceRating" required>
+                    <option value="">Select...</option>
+                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="3">3 - Acceptable</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <label for="websiteExperienceComments">Comments:</label>
+                <textarea id="websiteExperienceComments" name="websiteExperienceComments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Price Satisfaction Form -->
+            <form class="site-form" id="priceSatisfactionForm">
+                <h4>Price Satisfaction Rating (1-5)</h4>
+                <label for="priceSatisfactionRating">Rating:</label>
+                <select id="priceSatisfactionRating" name="priceSatisfactionRating" required>
+                    <option value="">Select...</option>
+                    <option value="1">1 - Too High</option>
+                    <option value="2">2 - Slightly High</option>
+                    <option value="3">3 - Fair</option>
+                    <option value="4">4 - Good Value</option>
+                    <option value="5">5 - Excellent Value</option>
+                </select>
+                <label for="priceSatisfactionComments">Comments:</label>
+                <textarea id="priceSatisfactionComments" name="priceSatisfactionComments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Suggestion Form -->
+            <form class="site-form" id="suggestionsForm">
+                <h4>Suggestions</h4>
+                <label for="suggestions">Your Suggestions:</label>
+                <textarea id="suggestions" name="suggestions" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Additional examples of generic forms added -->
+            <form class="site-form" id="additionalForm1">
+                <h4>Additional Form 1</h4>
+                <label for="add1Field1">Field 1:</label>
+                <input type="text" id="add1Field1" name="add1Field1" required>
+                <label for="add1Field2">Field 2:</label>
+                <textarea id="add1Field2" name="add1Field2"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <form class="site-form" id="additionalForm2">
+                <h4>Additional Form 2</h4>
+                <label for="add2Field1">Field 1:</label>
+                <input type="email" id="add2Field1" name="add2Field1" required placeholder="Enter your email">
+                <label for="add2Field2">Field 2:</label>
+                <input type="number" id="add2Field2" name="add2Field2" required placeholder="Enter a number">
+                <button type="submit">Submit</button>
+            </form>
+        
+            <form class="site-form" id="additionalForm3">
+                <h4>Additional Form 3</h4>
+                <label for="add3Field1">Field 1:</label>
+                <input type="date" id="add3Field1" name="add3Field1" required>
+                <label for="add3Field2">Field 2:</label>
+                <select id="add3Field2" name="add3Field2" required>
+                    <option value="">Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <!-- Submit success message (hidden) -->
+            <div id="successMessage" class="site-success-message" style="display: none;">Submission successful!</div>
+        </div>
+  </section>
+</main>
+            <footer>  
+              <div class="footer-content">  
+                <p>Copyright &copy; Aaron</p>
+              </div>  
+          </footer>      
+            </body>  
+            </html>
